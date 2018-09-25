@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <title>Formulário</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Curso de desenvolvimento Web">
+        <meta name="keywords" content="HTML5,CSS,PHP">
+        <meta name="author" content="Felipe Martins dos Santos">
+    </head>
+
+    <body >
+            
+        <form  id="form-cadastro" enctype="application/x-www-form-urlencoded" target="_blank">
+
+            <fieldset>
+
+                <legend>Informações Pessoais</legend>
+
+                <label for="nome">Nome:</label><br>
+                <input type="text" name="nome"><br>
+
+                <label for="senha">Senha:</label><br>
+                <input type="text" name="senha"><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email"  autocomplete="off" placeholder="seuemail@com.br" name="email"><br>
+
+                <label for="imagem">Imagem:</label><br>
+                <input type="file" name="imagem"><br>
+
+                <input type="hidden" name="id"><br><br>
+
+                <label for="curso">Escolha um curso:</label><br>
+                <input name="curso" list="lista-curso">
+                    <datalist id="lista-curso">
+                        <option value="HTML5">
+                        <option value="CSS3">
+                        <option value="PHP">
+                    </datalist><br><br>
+
+                <label for="site">URL:</label><br>
+                <input type="url" name="site"><br>
+
+                <label for="procurar">Search:</label><bR>
+                <input type="search" name="procurar"><br>
+
+                <label for="telefone">Telefone:</label><bR>
+                <input type="tel" name="telefone"><br>
+
+                <label for="Data">Data:</label><bR>
+                <input type="date" name="data" min="2000-12-31" max="2018-12-31"><br>
+                
+                <label for="tempo">tempo:</label><bR><br>
+                <input type="time" name="tempo"><br><br>
+
+                <label for="mesano">Mes e Ano:</label><bR><br>
+                <input type="month" name="mesano"><br><br>
+
+                <label for="semana">Semana:</label><bR><br>
+                <input type="week" name="semana"><br><br>
+
+                <label for="datahora">datahora:</label><bR><br>
+                <input type="datetime-local" name="datahora"><br><br>
+
+                <label for="mensagem">Mensagem:</label><bR><br>
+                <textarea name="mensagem" rows="5" cols="30" spellcheck="false"></textarea><br><br>
+
+                <label for="Botao">Botão:</label><bR><br>
+                <button type="button" name="botao">Clicka em Mim</button><br><br>
+                
+                <label for="veiculo">Veículos:</label>
+                <select name="veiculo">
+                    <optgroup label="Carros">
+                        <option value="camaro">Camaro</option>
+                        <option value="hilux">Hilux</option>
+                    </optgroup>
+                    <optgroup label="Motos">
+                        <option value="pop100" selected>pop100</option>
+                        <option value="zig-50">Zig-50</option>
+                    </optgroup> 
+                </select>
+                <br><br>
+
+                <label for="time">Time:</label><br>
+                <input type="radio" name="time" value="vasco" checked>Vasco<br>
+                <input type="radio" name="time" value="botafogo">Botafogo<br>
+                <input type="radio" name="time" value="Fluminense">Fluminense<br>
+                <input type="radio" name="time" value="flamengo">Flamengo<br>
+
+                <label for="cores">Cores:</label><br>
+                <input type="checkbox" name="cores" value="verde">Verde<br>
+                <input type="checkbox" name="cores" value="azul" checked>Azul<br>
+                <input type="checkbox" name="cores" value="preto">Preto<br>
+
+                <label for="qtde">Quantidade</label><br>
+                <input type="number" name="qtde" min="0" max="500" step="10">
+                <br><br>
+                <input type="range" name="qtde"><br>
+
+                <label for="cor">Cor:</label><br>
+                <input type="color" name="cor"><br>
+
+            </fieldset>
+
+            <input type="submit" name="btn-enviar-email" formmethod="" formaction="enviarEmail.php" value="Enviar por email">
+            <input type="submit" name="btn-cadastra" formaction="cadastrar" value="Cadastro" formnovalidate>
+
+        </form>
+
+        <label for="outronome">Outro Nome</label>
+        <input name="outronome" input="text" form="form-cadastro">
+
+    </body>
+
+
+</html>

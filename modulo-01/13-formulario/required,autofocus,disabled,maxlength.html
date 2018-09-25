@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <title>Formulário(autofocus-required-disabled)</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Curso de desenvolvimento Web">
+        <meta name="keywords" content="HTML5,CSS,PHP">
+        <meta name="author" content="Felipe Martins dos Santos">
+    </head>
+
+    <body >
+            
+        <form action="cadastro.php" method="GET">
+
+            <fieldset>
+
+                <legend>Informações Pessoais</legend>
+
+                <label for="nome">Nome:</label><br>
+                <input type="text" name="nome" required autofocus maxlength="7"><br>
+
+                <label for="senha">Senha:</label><br>
+                <input type="text" name="senha" disabled><br>
+            </fieldset>
+
+            <input type="submit" name="btn-enviar" value="Enviar">
+
+        </form>
+
+    </body>
+
+
+</html>

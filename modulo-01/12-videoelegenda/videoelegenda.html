@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <title>Video e legenda</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Curso de desenvolvimento Web">
+        <meta name="keywords" content="HTML5,CSS,PHP">
+        <meta name="author" content="Felipe Martins dos Santos">
+    </head>
+
+    <body >
+            
+            <video controls autoplay width="500px" height="450px" loop>
+                <source src="../video/Who killed Hannibal Full.mp4" type="video/mp4">
+                <!--legenda só funciona no protocol HTTP, não no protcolo file://-->
+                <track label="Português" kind="subtitles" srclang="pt" src="legendas.vtt" default>
+            </video>
+            
+
+    </body>
+
+
+</html>
