@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <title>Menu e Menitem</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Curso de desenvolvimento Web">
+        <meta name="keywords" content="HTML5,CSS,PHP">
+        <meta name="author" content="Felipe Martins dos Santos">
+        <link rel="icon" href="../img/Pokebola.png">
+
+        <style>
+            .elemento{
+                width: 300px;height: 300px;background-color:black;
+            }
+        </style>
+    </head>
+
+    <body>
+       
+       <div class="elemento" contextmenu="menu-1">
+        
+       </div>
+        <!--Ambas tags estão caindo em desuso e sendo removidas da maioria dos navegadores,
+        sendo somente funcional no firefox atualmente,e logo em nenhum navegador-->
+        <menu type="context" id="menu-1">
+            <menuitem>Atualizar</menuitem>
+
+            <menu label="Siga-nos">
+                <menuitem icon="../img/Pokebola.png">Google</menuitem>
+                <menuitem icon="../img/dragon-ball.png">Facebook</menuitem>
+            </menu>
+
+        </menu>
+
+
+       </map>
+
+    </body>
+
+
+</html>
